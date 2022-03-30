@@ -1,0 +1,12 @@
+from dataclasses import dataclass
+from email import message
+
+
+@dataclass
+class Error:
+    message: str
+    level: str
+
+    def __init__(self, message: str, level: str) -> None:
+        self.message = message
+        self.level = level
