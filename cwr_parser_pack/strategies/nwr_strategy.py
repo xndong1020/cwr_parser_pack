@@ -9,7 +9,7 @@ from inspect import getmembers, isfunction
 from queue import Empty
 from typing import Optional, Callable
 
-from cwr_parser_pack.models.nwr import Nwr
+from ..models.nwr import Nwr
 
 
 def nwr_strategy(

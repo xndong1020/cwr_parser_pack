@@ -1,7 +1,7 @@
 from typing import List
 
-from cwr_parser_pack.models.base import EntityBase
-from cwr_parser_pack.models.error import Error
+from ..models.base import EntityBase
+from ..models.error import Error
 
 
 class Spt(EntityBase):

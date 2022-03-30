@@ -1,4 +1,4 @@
-from cwr_parser_pack.strategies.nwr_strategy import nwr_strategy
+from ..strategies.nwr_strategy import nwr_strategy
 
 
 valid_line = "NWR0000000000000000FIRST AND LAST                                                00000000052029           20180101            POP000000Y      ORI         LISA FIENE                                N00000000000U                                                  N"

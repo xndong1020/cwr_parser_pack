@@ -1,4 +1,4 @@
-from cwr_parser_pack.models import Swr
+from ..models import Swr
 
 
 def swr_strategy(line: str):

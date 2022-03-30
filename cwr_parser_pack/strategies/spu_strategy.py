@@ -3,7 +3,7 @@
 # ###
 
 
-from cwr_parser_pack.models.spu import Spu
+from ..models.spu import Spu
 
 
 def spu_strategy(line: str):

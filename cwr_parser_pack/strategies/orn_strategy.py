@@ -9,7 +9,7 @@ reference as used in the CIS tool, AV Index.
 """
 
 
-from cwr_parser_pack.models import Orn, Visan
+from ..models import Orn, Visan
 
 
 def orn_strategy(line: str):

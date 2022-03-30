@@ -1,4 +1,4 @@
-from cwr_parser_pack.models import Opu
+from ..models import Opu
 
 
 def opu_strategy(line: str):

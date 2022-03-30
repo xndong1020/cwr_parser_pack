@@ -7,7 +7,7 @@ a translation of the work. Including record type VER would indicate a work trans
 """
 
 
-from cwr_parser_pack.models import Alt
+from ..models import Alt
 
 
 def alt_strategy(line: str):
