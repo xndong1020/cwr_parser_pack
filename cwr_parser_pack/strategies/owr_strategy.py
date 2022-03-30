@@ -5,7 +5,7 @@ The SWR record contains specific information on a writer controlled by the submi
 will, on a best efforts basis, provide either the writer’s tax id number (e.g. Social Security Number) or their
 IPI Name # to ensure exact identification by representative societies.
 """
-from models import Owr
+from cwr_parser_pack.models import Owr
 
 
 def owr_strategy(line: str):

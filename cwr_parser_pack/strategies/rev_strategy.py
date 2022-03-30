@@ -1,4 +1,4 @@
-from models.rev import Rev
+from cwr_parser_pack.models.rev import Rev
 
 
 def rev_strategy(line: str):

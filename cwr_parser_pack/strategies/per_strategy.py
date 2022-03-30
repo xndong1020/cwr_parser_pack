@@ -5,7 +5,7 @@ The name of a person or group performing this work either in public or on a reco
 """
 
 
-from models import Per
+from cwr_parser_pack.models import Per
 
 
 def per_strategy(line: str):

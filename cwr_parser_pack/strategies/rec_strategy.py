@@ -5,7 +5,7 @@ The REC record contains information on the first commercial release of the work.
 """
 
 
-from models import Rec
+from cwr_parser_pack.models import Rec
 
 
 def rec_strategy(line: str):

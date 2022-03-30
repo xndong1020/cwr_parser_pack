@@ -1,10 +1,10 @@
 import json
 
 
-from record_processor import record_processor
+from cwr_parser_pack.record_processor import record_processor
 
 from music_metadata.edi.file import EdiFile
-from transaction_processor import transaction_processor
+from cwr_parser_pack.transaction_processor import transaction_processor
 
 
 def json_generator(filename: str) -> None:

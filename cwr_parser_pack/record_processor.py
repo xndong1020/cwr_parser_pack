@@ -1,4 +1,4 @@
-from strategies import (
+from cwr_parser_pack.strategies import (
     spu_strategy,
     nwr_strategy,
     spt_strategy,

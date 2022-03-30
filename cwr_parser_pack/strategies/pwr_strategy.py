@@ -8,7 +8,7 @@ represents the writer.
 """
 
 
-from models import Pwr
+from cwr_parser_pack.models import Pwr
 
 
 def pwr_strategy(line: str):

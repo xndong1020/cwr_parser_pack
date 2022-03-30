@@ -13,7 +13,7 @@ chain of agreements.
 """
 
 
-from models import Spt
+from cwr_parser_pack.models import Spt
 
 
 def spt_strategy(line: str):

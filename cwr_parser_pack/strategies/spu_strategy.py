@@ -2,9 +2,8 @@
 # When submitting OPU records, the first record in the chain must be the original publisher.
 # ###
 
-import json
 
-from models.spu import Spu
+from cwr_parser_pack.models.spu import Spu
 
 
 def spu_strategy(line: str):

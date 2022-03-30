@@ -6,12 +6,10 @@
 # ###
 
 from inspect import getmembers, isfunction
-import json
-import pprint
 from queue import Empty
 from typing import Optional, Callable
 
-from models.nwr import Nwr
+from cwr_parser_pack.models.nwr import Nwr
 
 
 def nwr_strategy(

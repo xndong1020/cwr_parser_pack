@@ -11,7 +11,7 @@ the percentage collected there.
 """
 
 
-from models.swt import Swt
+from cwr_parser_pack.models.swt import Swt
 
 
 def swt_strategy(line: str):
