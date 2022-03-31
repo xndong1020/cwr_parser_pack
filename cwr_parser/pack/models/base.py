@@ -53,7 +53,7 @@ class EntityBase:
         """
         tmpDict = {}
         for k, v in self.__dict__.items():
-            # hide private properties
+            # hide private fields
             if not k.startswith("_"):
                 tmpDict[k] = v
         tmpDict["record_type"] = self.record_type
