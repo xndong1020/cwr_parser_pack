@@ -53,9 +53,9 @@ class EntityBase:
         """
         tmpDict = {}
         for k, v in self.__dict__.items():
-            tmpDict[k] = v
-        # Now we need to add attr5 which by default won't be picked up
-        # by the standard __dict__ method because it is a pure property
+            # hide private properties
+            if not k.startwith("_"):
+                tmpDict[k] = v
         tmpDict["record_type"] = self.record_type
         tmpDict["transaction_sequence_number"] = self.transaction_sequence_number
         tmpDict["record_sequence_number"] = self.record_sequence_number
