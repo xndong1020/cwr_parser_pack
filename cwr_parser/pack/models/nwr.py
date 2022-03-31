@@ -38,3 +38,6 @@ class Nwr(EntityBase):
 
     def __getitem__(self, key: str):
         return getattr(self, key)
+
+    def __setitem__(self, key: str, new_value):
+        return setattr(self, key, new_value)
