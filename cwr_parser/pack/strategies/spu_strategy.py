@@ -7,8 +7,8 @@ from ..models.spu import Spu
 
 
 def spu_strategy(line: str):
-    if len(line) < 183:
-        line = line.rjust(183, " ")
+    if len(line) < 184:
+        line = line.rjust(184, " ")
 
     """
     [Mandatory] 
