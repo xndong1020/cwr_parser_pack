@@ -6,7 +6,6 @@ from ..models.base import EntityBase
 from ..models.error import Error
 
 
-@dataclass
 class Nwr(EntityBase):
     errors: List[Error]
     work_title: str
