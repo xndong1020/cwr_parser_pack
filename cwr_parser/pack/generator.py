@@ -25,7 +25,6 @@ def json_generator(filename: str) -> None:
         # print('Group Name - ', group)
         # print('Group Header -', group.header())
         for transaction in group.get_transactions():
-            records = []
             if not transaction.valid and transaction.errors:
                 for error in transaction.errors:
                     print("error - ", error)
@@ -37,6 +36,6 @@ def json_generator(filename: str) -> None:
 
         # print('Group trailer -', group.trailer())
 
-    # Directly from dictionary
+    # save to file
     with open("json_data.json", "w") as outfile:
         json.dump(records, outfile)
