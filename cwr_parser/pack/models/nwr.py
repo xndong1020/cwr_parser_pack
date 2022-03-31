@@ -34,9 +34,3 @@ class Nwr(EntityBase):
     def __init__(self, record_prefix, errors: List[str] = []):
         self.errors = errors
         EntityBase.__init__(self, record_prefix)
-
-    def __getitem__(self, key: str):
-        return getattr(self, key)
-
-    def __setitem__(self, key: str, new_value):
-        setattr(self, key, new_value)
