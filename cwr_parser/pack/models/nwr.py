@@ -40,3 +40,4 @@ class Nwr(EntityBase):
 
     def __setitem__(self, key: str, new_value):
         self[key] = new_value
+        return
