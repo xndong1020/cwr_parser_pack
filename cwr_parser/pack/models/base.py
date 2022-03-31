@@ -20,6 +20,9 @@ class EntityBase:
     def __init__(self, record_prefix: str):
         self.record_prefix = record_prefix
 
+    def __getitem__(self, key: str):
+        return getattr(self, key)
+
     def asdict(self) -> dict:
         """
         Custom method to return a dict which is selective.
