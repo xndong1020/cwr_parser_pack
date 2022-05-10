@@ -47,7 +47,7 @@ def json_generator(filename: str) -> None:
         json.dump(records, outfile)
 
 
-def csv_generator(filename: str, target_filename: str) -> None:
+def csv_generator(filename: str) -> None:
     records = _base_generator(filename)
     dfd = pd.DataFrame(records)
-    dfd.to_csv(f"{target_filename}.csv", index=True)
+    dfd.to_csv("data.csv", index=True)
