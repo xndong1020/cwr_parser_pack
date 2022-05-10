@@ -1,13 +1,14 @@
 import json
-
+from typing import List
 
 from .record_processor import record_processor
 
 from music_metadata.edi.file import EdiFile
-from .transaction_processor import transaction_processor
+
+import pandas as pd
 
 
-def json_generator(filename: str) -> None:
+def _base_generator(filename: str) -> List:
     def readFile(filename):
         filehandle = open(filename, "rb")
         return filehandle
@@ -36,6 +37,17 @@ def json_generator(filename: str) -> None:
 
         # print('Group trailer -', group.trailer())
 
-    # save to file
+        return records
+
+
+def json_generator(filename: str) -> None:
+    records = _base_generator(filename)
+    # Directly from dictionary
     with open("json_data.json", "w") as outfile:
         json.dump(records, outfile)
+
+
+def csv_generator(filename: str) -> None:
+    records = _base_generator(filename)
+    dfd = pd.DataFrame(records)
+    dfd.to_csv("data.csv", index=True)
