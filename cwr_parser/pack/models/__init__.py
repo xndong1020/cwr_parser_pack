@@ -13,5 +13,6 @@ from ..models.per import Per
 from ..models.rec import Rec
 from ..models.alt import Alt
 from ..models.orn import Orn, Visan
+from ..models.com import Com
 from ..models.ver import Ver
 from ..models.xrf import Xrf

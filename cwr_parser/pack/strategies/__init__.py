@@ -13,5 +13,6 @@ from ..strategies.rec_strategy import rec_strategy
 from ..strategies.alt_strategy import alt_strategy
 from ..strategies.orn_strategy import orn_strategy
 from ..strategies.rev_strategy import rev_strategy
+from ..strategies.com_parser import com_parser
 from ..strategies.ver_parser import ver_parser
 from ..strategies.xrf_parser import xrf_parser
