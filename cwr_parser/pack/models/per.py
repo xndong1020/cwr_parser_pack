@@ -7,12 +7,10 @@ from ..models.error import Error
 
 @dataclass
 class Per(EntityBase):
-    errors: List[Error]
     performing_artist_last_name: str
     performing_artist_first_name: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):

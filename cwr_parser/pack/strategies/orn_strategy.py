@@ -13,8 +13,8 @@ from ..models import Orn, Visan
 
 
 def orn_strategy(line: str):
-    if len(line) < 401:
-        line = line.rjust(401, " ")
+    if len(line) < 348:
+        line = line.rjust(348, " ")
 
     """
     [Mandatory] 
@@ -71,7 +71,7 @@ def orn_strategy(line: str):
     bltvr = line[161:162].strip()
     work_origin.bltvr = bltvr
 
-    visan_obj = Visan()
+    visan_obj = Visan("", "", "")
 
     """
     [Optional] Version portion of the V-ISAN
@@ -91,7 +91,7 @@ def orn_strategy(line: str):
     episode = line[182:186].strip()
     visan_obj.episode = episode
 
-    work_origin.visan = visan_obj
+    work_origin.visan = visan_obj.toJSON()
 
     """
     [Optional] Check digit to verify accuracy of ISAN.

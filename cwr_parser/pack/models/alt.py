@@ -5,11 +5,9 @@ from ..models.error import Error
 
 
 class Alt(EntityBase):
-    errors: List[Error]
     alternate_title: str
     title_type: str
     language_code: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)

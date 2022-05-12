@@ -8,7 +8,6 @@ from ..models.error import Error
 
 @dataclass
 class Rev(EntityBase):
-    errors: List[Error]
     work_title: str
     language_code: str
     submitter_work: str
@@ -32,8 +31,7 @@ class Rev(EntityBase):
     catalogue_number: str
     priority_flag: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):

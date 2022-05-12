@@ -7,7 +7,6 @@ from ..models.error import Error
 
 @dataclass
 class Opu(EntityBase):
-    errors: List[Error]
     publisher_sequence_number: str
     interested_party_number: str
     international_standard_agreement_code: str
@@ -32,8 +31,7 @@ class Opu(EntityBase):
     work_title: str
     agreement_type: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):

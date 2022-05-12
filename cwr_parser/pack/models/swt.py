@@ -7,7 +7,6 @@ from ..models.error import Error
 
 @dataclass
 class Swt(EntityBase):
-    errors: List[Error]
     interested_party_number: str
     pr_collection_share: str
     mr_collection_share: str
@@ -16,8 +15,7 @@ class Swt(EntityBase):
     tis_numeric_code: str
     sequence_number: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):

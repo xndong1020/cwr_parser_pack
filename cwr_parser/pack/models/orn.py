@@ -1,3 +1,5 @@
+import json
+
 from dataclasses import dataclass
 from typing import List
 
@@ -11,10 +13,12 @@ class Visan:
     isan: str
     episode: str
 
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=2)
+
 
 @dataclass
 class Orn(EntityBase):
-    errors: List[Error]
     intended_purpose: str
     production_title: str
     cd_identifier: str
@@ -29,8 +33,8 @@ class Orn(EntityBase):
     avi_society_code: str
     audio_visual_number: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
+        self.visan = Visan("", "", "")
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):

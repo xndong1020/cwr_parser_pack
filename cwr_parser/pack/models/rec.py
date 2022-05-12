@@ -7,7 +7,6 @@ from ..models.error import Error
 
 @dataclass
 class Rec(EntityBase):
-    errors: List[Error]
     first_release_date: str
     constant: str
     first_release_duration: str
@@ -19,8 +18,7 @@ class Rec(EntityBase):
     recording_technique: str
     media_type: str
 
-    def __init__(self, record_prefix, errors: List[str] = []):
-        self.errors = errors
+    def __init__(self, record_prefix):
         EntityBase.__init__(self, record_prefix)
 
     def __getitem__(self, key: str):
