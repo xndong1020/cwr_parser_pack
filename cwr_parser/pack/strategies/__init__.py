@@ -5,6 +5,7 @@ from ..strategies.opt_strategy import opt_strategy
 from ..strategies.opu_strategy import opu_strategy
 from ..strategies.swr_strategy import swr_strategy
 from ..strategies.swt_strategy import swt_strategy
+from ..strategies.owt_strategy import owt_strategy
 from ..strategies.pwr_strategy import pwr_strategy
 from ..strategies.owr_strategy import owr_strategy
 from ..strategies.per_strategy import per_strategy

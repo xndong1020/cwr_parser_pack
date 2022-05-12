@@ -6,6 +6,7 @@ from .strategies import (
     opu_strategy,
     swr_strategy,
     swt_strategy,
+    owt_strategy,
     pwr_strategy,
     owr_strategy,
     per_strategy,
@@ -25,6 +26,7 @@ options = {
     "SWR": swr_strategy,  # SWR: Writer Controlled By Submitter
     "OWR": owr_strategy,  # OWR: Other Writer
     "SWT": swt_strategy,  # SWT: Writer Territory of Control
+    "OWT": owt_strategy,  # OWT: Other Writer Collection
     "PWR": pwr_strategy,  # PWR: Publisher For Writer
     "PER": per_strategy,  # PER: Performing Artist 5.17
     "REC": rec_strategy,  # REC: Recording Detail 5.19

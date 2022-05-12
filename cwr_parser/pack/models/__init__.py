@@ -7,6 +7,7 @@ from ..models.opu import Opu
 from ..models.swr import Swr
 from ..models.owr import Owr
 from ..models.swt import Swt
+from ..models.owt import Owt
 from ..models.pwr import Pwr
 from ..models.per import Per
 from ..models.rec import Rec
