@@ -2,6 +2,7 @@ from .strategies import (
     spu_strategy,
     nwr_strategy,
     spt_strategy,
+    opt_strategy,
     opu_strategy,
     swr_strategy,
     swt_strategy,
@@ -20,6 +21,7 @@ options = {
     "NWR": nwr_strategy,  # NWR: New work record 4.2
     "REV": rev_strategy,  # REV: Revised Registration 4.3
     "SPT": spt_strategy,  # SPT: Publisher Territory of Control
+    "OPT": opt_strategy,  ## OPT: publisher non-controlled
     "SWR": swr_strategy,  # SWR: Writer Controlled By Submitter
     "OWR": owr_strategy,  # OWR: Other Writer
     "SWT": swt_strategy,  # SWT: Writer Territory of Control

@@ -1,6 +1,7 @@
 from ..strategies.spu_strategy import spu_strategy
 from ..strategies.nwr_strategy import nwr_strategy
 from ..strategies.spt_strategy import spt_strategy
+from ..strategies.opt_strategy import opt_strategy
 from ..strategies.opu_strategy import opu_strategy
 from ..strategies.swr_strategy import swr_strategy
 from ..strategies.swt_strategy import swt_strategy

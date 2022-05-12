@@ -2,6 +2,7 @@ from ..models.nwr import Nwr
 from ..models.base import EntityBase
 from ..models.error import Error
 from ..models.spt import Spt
+from ..models.opt import Opt
 from ..models.opu import Opu
 from ..models.swr import Swr
 from ..models.owr import Owr
