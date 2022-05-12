@@ -1,7 +1,6 @@
 from dataclasses import dataclass
-from typing import List
 
-from models.base import EntityBase
+from ..models.base import EntityBase
 
 
 @dataclass

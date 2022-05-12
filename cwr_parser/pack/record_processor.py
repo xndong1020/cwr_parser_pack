@@ -15,6 +15,7 @@ from .strategies import (
     orn_strategy,
     rev_strategy,
     xrf_parser,
+    ver_parser,
 )
 
 options = {
@@ -34,6 +35,7 @@ options = {
     "ALT": alt_strategy,  # ALT: Alternate Title 5.13
     "ORN": orn_strategy,  # ORN: Work Origin 5.20
     "XRF": xrf_parser,  # XEF: Work Code Cross Reference
+    "VER": ver_parser,  # VER: Original Work Title for Versions
 }
 
 
