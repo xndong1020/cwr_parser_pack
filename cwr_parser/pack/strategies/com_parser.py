@@ -10,7 +10,6 @@ from ..models import Com
 
 
 def com_parser(line: str):
-    print("com", line, len(line))
     if len(line) < 308:
         line = line.rjust(308, " ")
 
